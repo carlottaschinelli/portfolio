@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Carlotta Schinelli">
+    <meta property="og:type" content="Website">
+    <meta property="og:url" content="https://carlottaschinelli.github.io/portfolio/">
+    <meta property="og:image" content="https://postimg.cc/T51nVFKX">
+
     <title>Carlotta Schinelli</title>
     <link rel="icon" type="image/x-icon" href="icona.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
@@ -28,6 +34,7 @@
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="curriculum.html">Curriculum</a></li>
             </ul>
         </div>
     </nav>
@@ -44,6 +51,7 @@
                 <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                <li><a href="curriculum.html" onclick="toggleMenu()">Curriculum</a></li>
             </div>
         </div>
     </nav>
@@ -56,7 +64,7 @@
             <h1 class="title">Carlotta Schinelli</h1>
             <p class="section__text__p2">UX/UI Designer</p>
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('curriculum.pdf')">Download CV</button>
+                <button class="btn btn-color-2" onclick="location.href='./curriculum.html'">Curriculum</button>
                 <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
             </div>
             <div id="socials-container">
@@ -71,21 +79,20 @@
         <h1 class="title">About Me</h1>
        
         <div class="about-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <img src="experience.png" alt="experience icon" class="icon">
-                    <h3>Experience</h3>
-                    <p>1+ year <br>UX/UI design</p>
-                </div>
-                <div class="details-container">
-                    <img src="education.png" alt="education icon" class="icon">
-                    <h3>Education</h3>
-                    <p>Master in UX/UI design - Start2Impact<br>Master in Interior Design - NABA Milano</p>
-                </div>
-            </div>
             <div class="text-container">
                 <p><br><br><br>Non-radical minimalist, I’m someone who cares about the things she makes. Some of my skills include user research, synthesizing research into insights and ideas, information architecture, UX/UI design, prototyping, user test and brand identity. <br>In my free time I also paint and cook. <br><br>Oh, and I used to be an Interior Designer.</p>
             </div>
+            <div class="about-containers">
+                <div class="details-container">
+                    <h3>Soft skills</h3>
+                    <p> <br>Patience <br>Self-criticism <br>Intuition</p>
+                </div>
+                <div class="details-container">
+                    <h3>Hobbies</h3>
+                    <p><br>Painting<br>Cooking desserts<br>Reading</p>
+                </div>
+            </div>
+            
         </div>
         <img src="arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
 
@@ -247,6 +254,7 @@
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li><a href="curriculum.html">Curriculum</a></li>
                 </ul>
             </div>
         </nav>
@@ -254,6 +262,6 @@
     </footer>
 
 
-    <script src="script.js"></script>
+    
 </body>
 </html>
